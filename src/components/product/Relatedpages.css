@@ -1,0 +1,24 @@
+.related-container{
+    padding: 10px 5%;
+}
+
+.related-container h3{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.related-image-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(150px ,1fr));
+    gap: 30px;
+}
+
+.related-image-container h1{
+     font-size: clamp(0.9rem , 1vw , 1.3rem);
+    padding: 5px 0 10px;
+}
+
+
+

@@ -1,0 +1,145 @@
+.Productdata-container{
+    width: 100%;
+    padding: 10px 5%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;
+    height: 90vh;
+    max-height: 100%;
+}
+.image-section{
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  gap: 10px;   
+  overflow: hidden;
+}
+.image-section .small{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+    overflow: scroll;
+}
+.small::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.image-section .small img{
+    width: 100%;
+    object-fit: cover;
+    height: 130px;
+}
+.image-section .big{
+    width: 100%;
+    height: 100%;
+}
+.image-section .big img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.detail-section h1{
+    font-size: clamp(1.4rem , 2vw , 1.8rem);
+    font-weight: 500;
+}
+.detail-section .star{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 10px 0;
+}
+.detail-section .star img{
+    width: 15px;
+}
+.detail-section .price{
+   font-size: 2rem;
+   margin: 20px 0; 
+}
+.detail-section .description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.detail-section .size{
+    margin: 30px 0;
+}
+.detail-section .size h1{
+    font-size: clamp(1.1rem , 2vw , 1.5rem)
+}
+.detail-section .size button{
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    outline: none;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.active-size{
+    border: 1px solid tomato;
+    color: tomato;
+}
+
+.detail-section .addtocart button{
+ padding: 10px 30px;
+ font-size: 1.2rem;
+ font-weight: 300;
+ color: #fff;
+ background: tomato;
+ border-radius: 4px;
+ border: none;
+ outline: none;
+ transition: background 0.5s ease;
+}
+.detail-section .addtocart button:hover{
+    background-color: rgb(184, 29, 2);
+}
+.detail-section hr{
+    margin: 20px 0;
+}
+.detail-section .product-detail{
+    margin: 30px 0;
+}
+.detail-section .product-detail h1{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.detail-section .product-detail p{
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #555;
+}
+
+
+@media screen and (max-width:678px) {
+ .Productdata-container{
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+}
+.image-section{
+grid-template-columns: 1fr;
+}
+
+.image-section .small{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    overflow-x: scroll;
+}
+.image-section .small img{
+    width:30%;
+    height: 150px;
+     object-fit: cover;
+}
+.image-section .big{
+    grid-row-start: 1;
+}
+   
+}

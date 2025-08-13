@@ -1,0 +1,235 @@
+.about-container{
+    background: var(--normal-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    color: #fff;
+    flex-direction: column;
+}
+
+.about-container h1{
+    font-size: clamp(1.4rem , calc(8vw - 20px) , 2.5rem);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.about-links{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.about-links li{
+    list-style: none;
+}
+
+
+
+.contact-container{
+    width: 100%;
+    padding: 10px 5%;
+}
+.contact-container h1{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 20px 0 0 0 ;
+}
+.contact-container p{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contact-input{
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0 0;
+}
+.name-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.email-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.name-input label , .email-input label{
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.name-input #username{
+    padding: 15px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4),0px 5px 20px rgba(0,0,0,0.4);
+}
+.email-input #useremail{
+    padding: 15px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4),0px 5px 20px rgba(0,0,0,0.4);
+}
+
+#useremail::placeholder , #username::placeholder{
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.contact-input textarea{
+    max-width: 100%;
+    width: 800px;
+    margin: 20px auto 10px;
+    height: 100px;
+    border-radius: 0.8rem;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4),0px 5px 20px rgba(0,0,0,0.4);
+    padding: 20px 30px;
+}
+
+
+.contact-input .contact-btn{
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background: tomato;
+    color: #fff;
+    font-size: 1rem;
+    margin: 8px 0 20px;
+    transition: 0.5s;
+}
+
+.contact-input .contact-btn:hover{
+    background: rgb(216, 92, 70);
+}
+
+/* second container */
+
+.contact-detail-container{
+    width: 90%;
+    border-radius: 1rem;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    background: var(--normal-color);
+    align-items: center;
+    color: #fff;
+}
+.contact-detail-container .contact-box{
+    height: 200px;
+    position: relative;
+}
+.contact-box .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-box .box1{
+    position: relative;
+}
+.contact-box .box1::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 3px;
+    background: tomato;
+    left: 0;
+}
+.box .contact-img{
+    position: absolute;
+    top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+.contact-img img{
+    width: 35px;
+}
+.box h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom:  10px;
+}
+
+.contact-box .box p{
+   font-size: 1rem;
+   text-align: center;
+}
+
+.contact-box p span{
+    display: block;
+}
+
+
+.map-container{
+    width: 100%;
+    height: 400px;
+    padding: 10px 5%;
+    z-index: -1;
+    margin-bottom: 10px;
+}
+.map-container iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+   border: none;
+}
+
+
+@media screen and (max-width : 968px) {
+ .user-input{
+    flex-direction: column;
+ }
+ .name-input , .email-input{
+      width: 100%;
+ }
+ .contact-detail-container{
+    grid-template-columns: repeat(1,1fr);
+ }
+ .contact-box .box1::before{
+    display: none;
+ }
+ .contact-box .box2::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 0;
+ }
+
+
+ .box .contact-img{
+    position: relative;
+    top: 0px;
+}
+}

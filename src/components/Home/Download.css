@@ -1,0 +1,51 @@
+.download{
+    background: var(--normal-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.download  .ad{
+    width: 50%;
+}
+
+.download .ad h4{
+   font-size: min(1.4rem ,18px);
+   margin-bottom: 20px;
+}
+.download .ad p{
+   font-size: min(1rem , 12px);
+   line-height: 30px;
+}
+.download .ad span{
+   color: tomato;
+   display: block;
+}
+
+.download-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.download-img img{
+    width: 150px;
+}
+
+
+@media  screen and (max-width : 630px) {
+ .download  .ad{
+    width: 100%;
+}   
+
+.download-img img{
+    width: 120px;
+}
+
+
+}

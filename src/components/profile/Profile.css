@@ -1,0 +1,133 @@
+.profile-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    filter: blur(30%);
+    background: #111111ad;
+    z-index: 99999;
+}
+
+.profile-div-container{
+    width: 80%;
+    height: 80vh;
+    background-color: var(--normal-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.profile-image-container{
+  width: 100%;
+  height: 100%;
+}
+.profile-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-input-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px 30px;
+}
+.cancel-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.cancel-btn img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.input-container-profile{
+}
+.input-container-profile h1{
+    text-align: center;
+    color: #fff;
+}
+.input-container-profile hr{
+    width: 10%;
+    margin: 10px auto;
+    border: none;
+    height: 3px;
+    background: tomato;
+}
+
+.input-container-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    height: 170px;
+}
+
+.input-container-box input{
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+}
+.input-container-box input::placeholder{
+    color: #fff;
+}
+.forget{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #fff;
+    justify-content:space-between;
+}
+.profile-input-container button{
+    width: 100%;
+    height: 40px;
+    background: tomato;
+    border: 0;
+    outline: 0;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.log{
+    color: tomato;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.profile-input-container .hr1{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+.icon-profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.icon-profile-container img{
+        width: 40px;
+}
+
+@media screen and (max-width :640px) {
+    .profile-div-container{
+        grid-template-columns: repeat(1,1fr);
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        max-height: 550px;
+    }
+    .profile-image-container{
+        display: none;
+    }
+    
+}

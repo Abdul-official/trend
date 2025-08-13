@@ -1,0 +1,35 @@
+.story-container{
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.story p{
+    margin: 0 0 30px;
+    color: #888;
+}
+.story p span{
+    display: block;
+}
+
+.story h4{
+    font-size: max(1.3rem , 16px);
+    color: #666;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:630px) {
+ .story-container{
+    gap: 10px;
+ }
+ .story p{
+    margin: 0 0 15px;
+    font-size: 0.8rem;
+ }  
+ .story h4{
+    font-size: 1.2rem;
+ } 
+}

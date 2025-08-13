@@ -1,0 +1,34 @@
+.hero-dot-play{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 100%;
+}
+.hero-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-dot{
+    width: 10px;
+    height: 10px;
+    list-style: none;
+    margin: 0 4px;
+    line-height: 1;
+    border-radius: 50%;
+    background: #111;
+    cursor: pointer;
+}
+.hero-dot.orange{
+    background: tomato;
+}
+
+@media screen and (max-width:630px) {
+  .hero-dot{
+    width: 7px;
+    height: 7px;
+    margin: 0 3px;
+  }  
+}

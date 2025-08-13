@@ -1,0 +1,58 @@
+.swipe-container{
+  background:var(--normal-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:40vh;
+  max-height: 300px;
+  width: 100%;
+  padding: 10px 5%;
+}
+
+.mySwiper{
+  width: 50%;
+  height: 100%;
+  margin: auto ;
+  color: #fff;
+  text-align: left;
+}
+
+.testimonial-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial-content p{
+  line-height: 40px;
+}
+.testimonial-content h1{
+  margin-top: 40px;
+  font-size: 1.3rem;
+}
+.testimonial-content h2{
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:630px) {
+.swipe-container{
+  height: 30vh;
+}
+  .mySwiper{
+  width: 100%;
+}
+.testimonial-content p{
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+.testimonial-content h1{
+  font-size: 1.4rem;
+  margin-top: 30px;
+}
+.testimonial-content h2{
+  color: var(--navbar-color);
+  font-size: 0.9rem;
+}
+ 
+}

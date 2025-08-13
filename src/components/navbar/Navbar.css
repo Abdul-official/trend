@@ -1,0 +1,161 @@
+.nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background:#222;
+    color: #fff;
+}
+.nav-div p{
+    font-size: 0.9rem;
+}
+.nav-div p span{
+    margin-left: 8px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navbar-color);
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+}
+
+.navbar-container .logo img{
+    width: 150px;
+}
+
+.navbar-container ul li{
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+.navbar-container ul li a.active{
+        color: tomato;
+}
+
+.navbar-container .icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img{
+    width: 20px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.profile-icon,.cart-icon{
+    position: relative;
+}
+.profile-icon ul{
+    position: absolute;
+    top: 25px;
+    left: -40px;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+    background:var(--navbar-color);
+    display: none;
+    transition: all 0.5s;
+}
+.profile-icon ul li{
+    margin: 3px 0;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.profile-icon ul li:hover{
+    color: tomato;
+    transform: scale(1.03);
+}
+.profile-icon:hover  ul{
+    display: block;
+}
+
+.cart-icon span{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: tomato;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.7rem;
+}
+.menu-icon{
+    display: none;
+}
+
+
+/* mobile view */
+.mobile-nav{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--navbar-color);
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+.back{
+    display: flex;
+    align-items: center;
+    background: var(--normal-color);
+    padding: 20px 10px;
+    color: #fff;
+}
+.back img{
+    transform: rotate(180deg);
+    width: 25px;
+}
+.back p{
+    font-size: 1.2rem;
+}
+
+.mobile-ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.mobile-ul li{
+    list-style: none;
+    padding: 20px 0;
+}
+.mobile-ul li .active{
+    color: tomato;
+}
+
+.active-menu{
+    left: 0;
+}
+
+@media screen and (max-width : 630px) {
+    .nav-div{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav-div p{
+        font-size: 0.6rem;
+    }
+    .navbar-container .logo img{
+        width: 120px;
+    }
+    .navbar-container .icon-container img{
+        width: 18px;
+    }
+    .navbar-container ul{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
