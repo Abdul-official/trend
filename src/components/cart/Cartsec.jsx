@@ -32,7 +32,7 @@ const Cartsec = () => {
         const handleCheckout = async () => {
     const stripe = await stripePromise;
 
-    const res = await fetch("https://light-c3hg.onrender.com/create-checkout-session", {
+    const res = await fetch("http://localhost:5173/create-checkout-session", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
        body: JSON.stringify({ amount: total * 100 })
