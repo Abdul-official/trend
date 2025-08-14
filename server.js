@@ -9,7 +9,7 @@ const stripe = new Stripe(
   "sk_test_51RvHRKHzVmYq6Pv1ADwBbRHWZDuofLtS8DihiAJV0BPD55R2048TsYLQIsi8pRUUwNN0p57XPbFiUyG03Hqqcz1P00pKP96ZYG"
 );
 
-const FRONTEND_ORIGIN = "http://localhost:5173";
+const FRONTEND_ORIGIN = "https://light-c3hg.onrender.com";
 
 // Middleware
 app.use(cors({ origin: FRONTEND_ORIGIN }));
